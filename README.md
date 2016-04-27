@@ -12,7 +12,7 @@ have fun!
 --------------------------------------------------------------------------------
 
 ##How To Run##
-	- Download
+	- Download everything
 	- Open in Codeblocks
 	- Build
 	- Run
@@ -36,7 +36,7 @@ a precaution, use the CU Boulder given VM.
 --------------------------------------------------------------------------------
 
 ##Open Issues/bugs##
-If you were to input anything other than numbers it will begin a never-ending 
+If you were to input anything other than numbers, it will begin a never-ending 
 loop.
 
 --------------------------------------------------------------------------------
