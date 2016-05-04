@@ -148,8 +148,17 @@ int Functions::fightMonster(GameData monster){
     if(player.health <= 0){
         std::cout << "You have died!" << std::endl;
         std::cout << "Your journey ends here." << std::endl;
-        stat.gamemode = 4;
-        return 3;
+        std::cout << "Play again? ('yes' or 'no')" << std::endl;
+        std::string playchoice;
+        std::cin>>playchoice;
+        if(playchoice == "yes"){
+            player = GameData("player", 25, 5, 1, 0, 0, 0);
+            return 0;
+        }
+        else{
+            stat.gamemode = 4;
+            return 3;
+        }
     }
     if(mstr.health <= 0){
         std::cout << "You've beaten the " << mstr.name << ", and you got " << mstr.gold << " gold, and " << mstr.experience << " experience!" << std::endl;
